@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ object.name }}</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-logo">{{ object.name }}</div>
+		</div>
+
+		<div class="main">
+			<div class="sideber">
+		    <ul>
+		      <li>おすすめ：{{ object.recommendation }}</li>
+		      <li>スープ：{{ object.soup }}</li>
+		      <li>麺：細め</li>
+		      <li>最寄駅：{{ object.station }}</li>
+		      <li>待ち時間：なし</li>
+		    </ul>
+		  </div>
+		  <div class="contents">
+		    <img src= "{{ object.picture.url }}" style="max-height:300px">
+		  </div>
+
+		</div>
+
+		<div class="footer">
+		</div>
+
+	</body>
+</html>

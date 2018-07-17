@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<hr>
+<div>
+  <ul>
+    {% for list in object_list %}
+    	<li><a href="{% url 'detail' list.pk %}">{{ list.name }}</a></li><hr>
+			<!-- {% if list != object_list.last %}{% endif %} -->
+    {% endfor %}
+  </ul>
+</div>
+<hr>
+<div class="footer">
+	{% include 'RamenBlog/page.html' %}
+</div>
+{% endblock %}
